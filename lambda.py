@@ -4,7 +4,7 @@ import json
 lambda_Client = boto3.client('lambda', region_name='us-west-2')
 response = lambda_Client.create_function(
     Code={
-        'S3Bucket': 's3-bucket.app',
+        'S3Bucket': 's2-bucket.app',
         'S3Key': 'test.zip',  # how can i create or fetch this S3Key
     },
 
